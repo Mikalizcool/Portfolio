@@ -6,6 +6,14 @@
   padding: 5px;
   border: 1px solid red;
 }
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -19,12 +27,6 @@
 .col-11 {width: 91.66%;}
 .col-12 {width: 100%;}
 
-@media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-}
 
 p{
 	color: green;
@@ -55,4 +57,5 @@ h1{
 	line-height: 1.5px;
 	font-weight: 600;
 	border: 20px solid white;
+	color: black;
 }
