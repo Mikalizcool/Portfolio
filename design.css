@@ -33,13 +33,15 @@
 	.col-12 {width: 100%;}
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
 .nav{
-	position: absolute;
-
+	display: flex;              /* establish flex container */
+    flex-direction: column;     /* stack flex items vertically */
+    justify-content: center;    /* center items vertically, in this case */
+    align-items: center;        /* center items horizontally, in this case */
+    height: 300px;
 }
 }
-
 
 @media only screen and (min-width: 768px) {
 	/* For desktop: */
