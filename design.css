@@ -33,6 +33,14 @@
 	.col-12 {width: 100%;}
 }
 
+@media only screen and (max-width: 600px) {
+.nav{
+	position: absolute;
+
+}
+}
+
+
 @media only screen and (min-width: 768px) {
 	/* For desktop: */
 	.nav{
@@ -60,11 +68,7 @@
 		
 	}
 }
-.nav{
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
+
 @keyframes fadeInAnimation {
 	0% {
 		opacity: 0;
