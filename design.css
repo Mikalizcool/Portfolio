@@ -1,9 +1,12 @@
 * {
   box-sizing: border-box;
 }
+
 [class*="col-"] {
+  
   float: left;
-  padding: 5px;
+  padding: 1px;
+  height: 60px;
   border: 1px solid red;
 }
 /* For mobile phones: */
@@ -27,10 +30,33 @@
 	.col-12 {width: 100%;}
 }
 
+@media only screen and (min-width: 768px) {
+	/* For desktop: */
+	.row{
+		
+		display: flex;
+		justify-content: center;
+		
+		width: 100%;
+		height: 20vh;
+		font-size: 10px;
+		text-align: center;
+		margin: 10px;
+	}
+	.games{/*
+		position: relative;
+		left: 40%;*/
+	}
+	.art{
+		position: relative;
+		
+	}
+}
 .button {
+  font-family: montserrat;
+  font-size: 14px;
   display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
+  padding: 15px 20px;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
@@ -39,8 +65,8 @@
   background-color: white;
   border: 2px solid #474747;
   border-radius: 30px;
-  
 }
+
 
 .button:hover {border: 2px solid orange;}
 
@@ -64,13 +90,10 @@ h1{
 	background-color: orange;
 	border: 40px solid orange;
 }
-.row{
-	
-	
-}
+
 .header{
 	position: relative;
-	left: 150px;
+	left: 180px;
 	font-family: montserrat;
 	font-size: 17px;
 	line-height: 1.5px;
@@ -78,8 +101,8 @@ h1{
 	border: 20px solid white;
 	color: black;
 	width: 160px;
-  height: 80px;
-  background: #a84909;
-  border-radius: 50%;
+	height: 80px;
+	background: #a84909;
+	border-radius: 50%;
  
 }
