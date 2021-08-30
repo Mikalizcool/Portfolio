@@ -34,6 +34,7 @@
 }
 
 @media only screen and (max-width: 768px) {
+	/* For mobile phones: */
 	.nav{
 		display: flex;              /* establish flex container */
 		flex-direction: column;     /* stack flex items vertically */
