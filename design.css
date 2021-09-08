@@ -67,6 +67,15 @@
 	  margin-right: auto;
 	  margin-top:5%;
 	}
+	
+	.artCenter{
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		margin-top:2%;
+		width:60%;
+	}
+	
 	.row{
 		
 		display: flex;
@@ -124,8 +133,10 @@
   transform: translateY(4px);
 }
 
-p{
+.title{
+	display:flex;
 	justify-content: center;
+	
 }
 
 .p1{
