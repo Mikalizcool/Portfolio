@@ -124,6 +124,10 @@
   transform: translateY(4px);
 }
 
+p{
+	justify-content: center;
+}
+
 .p1{
 	font-size: 22px;
 	display: flex;
