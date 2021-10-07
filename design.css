@@ -150,6 +150,13 @@
 	
 }
 
+.mini-title{
+	display:flex;
+	justify-content: center;
+	color: #474747;
+	font-size: 10px;
+}
+
 .p1{
 	font-size: 22px;
 	display: flex;
