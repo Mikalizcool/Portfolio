@@ -11,15 +11,34 @@
 		<link href='./design.css' rel='stylesheet'>
 	</head>
 	<body>
+	<!--
 		<div class="nav">
 			<div class="colz-2"> <a href="./index.html" <button class= "button home"> HOME </button> </a> </div>
 			<div class="colz-2"> <a href="./games.html" <button class= "button games"> APPS </button> </a> </div>
 			<div class="colz-2"> <a href= "./art.html" <button class="button art"> ART </button></a> </div>
 			<!--<div class="colz-2"> <a href= "./webtoons.html" <button class="button" > WEBTOONS </button> </a> </div>-->
-			<div class="colz-2"> <a href= "./books.html" <button class="button" > BOOKS </button> </a> </div>
+			<!--<div class="colz-2"> <a href= "./books.html" <button class="button" > BOOKS </button> </a> </div>
 			<div class="colz-2"> <a href= "./aboutme.html" <button class="button" > ABOUT ME </button> </a> </div>
 			</div>
 		</div>
+		-->
+		<button class="openbtn" onclick="openNav()">☰</button>
+		<div id="mySidepanel" class="sidepanel">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+			<a href="#">About</a>
+			<a href="#">Services</a>
+			<a href="#">Clients</a>
+			<a href="#">Contact</a>
+		</div>
+		<script>
+			function openNav() {
+			  document.getElementById("mySidepanel").style.width = "250px";
+			}
+
+			function closeNav() {
+			  document.getElementById("mySidepanel").style.width = "0";
+			}
+		</script>
 		<p class="title"> POSTER COMMISSION </p>
 		<img src="MichaelD_AJSA_Poster_2020.png" class="artCenter">
 		<p class="title"> BOOK COVER </p>
