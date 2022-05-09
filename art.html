@@ -11,8 +11,60 @@
 		<link href='./design.css' rel='stylesheet'>
 	</head>
 	<body>
-	
-		<div class="nav">
+	<style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #FFD250 ;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+		
+			  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+
+
+  
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+			
+
+		<div class="nav" class="container">
 			<div class="colz-2"> <a href="./index.html" <button class= "button home"> HOME </button> </a> </div>
 			<div class="colz-2"> <a href="./games.html" <button class= "button games"> APPS </button> </a> </div>
 			<div class="colz-2"> <a href= "./art.html" <button class="button art"> ART </button></a> </div>
@@ -23,15 +75,20 @@
 		</div>
 		
 		
-		<p class="title"> POSTER COMMISSION </p>
-		<img src="MichaelD_AJSA_Poster_2020.png" class="artCenter">
-		<p class="title"> BOOK COVER </p>
-		<img src="book_cover.png" class="artCenter">
-		<p class="title"> AMERICANA KNIGHT </p>
-		<img src="webpic27.png" class="artCenter">
-		<p class="title"> MORDIN SOLUS </p>
-		<img src="mordin.png" class="artCenter">
-		<p class="title"> TOPH BEIFONG </p>
-		<img src="toph.png" class="artCenter">
+		<div>
+			
+			<p class="title"> POSTER COMMISSION </p>
+			<img src="MichaelD_AJSA_Poster_2020.png" class="artCenter">
+			<p class="title"> BOOK COVER </p>
+			<img src="book_cover.png" class="artCenter">
+			<p class="title"> AMERICANA KNIGHT </p>
+			<img src="webpic27.png" class="artCenter">
+			<p class="title"> MORDIN SOLUS </p>
+			<img src="mordin.png" class="artCenter">
+			<p class="title"> TOPH BEIFONG </p>
+			<img src="toph.png" class="artCenter">
+		</div>
+		
+		
 	</body>
 </html>
