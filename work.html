@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title> Michael </title>
+		<link href="./favicon2.png" rel="icon">
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+		<!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+		-->
+		<link href='./design.css' rel='stylesheet'>
+	</head>
+	<body>
+	<style>
+
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 5px;
+  z-index: 99;
+  font-size: 30px;
+  border: none;
+  outline: none;
+  background-color: #FFD250 ;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
+</style>
+		
+			  <button onclick="topFunction()" id="myBtn" title="Go to top">&uarr;</button>
+
+
+  
+
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+  
+			
+
+		<div class="nav" class="container">
+			<div class="colz-2"> <a href="./index.html" <button class= "button home"> HOME </button> </a> </div>
+			<div class="colz-2"> <a href="./games.html" <button class= "button games"> APPS </button> </a> </div>
+			<div class="colz-2"> <a href= "./art.html" <button class="button art"> ART </button></a> </div>
+			<div class="colz-2"> <a href= "./work.html" <button class="button" > WORK </button> </a> </div>
+			<div class="colz-2"> <a href= "./aboutme.html" <button class="button" > RATES </button> </a> </div>
+			</div>
+		</div>
+		
+		<div>
+			<p class="title"> MALAWI INTRO ANIMATION </p>
+			<video width="400" controls class="artCenter">
+			<source src="animation.mp4" type="video/mp4">
+			<source src="animation.ogg" type="video/ogg">
+			Your browser does not support HTML video.
+		</div>
+		<div>
+			<p class="title"> STORYBOARD </p>
+			<img src="Storyboard.png" class="artCenter">
+			<p class="title"> ONE PAGER </p>
+			<img src="by_the_numbers.png" class="artCenter">
+			<p class="title"> REPORT TEMPLATE 1 </p>
+			<img src="report1_a.png" class="artCenter">
+			<img src="report1_b.png" class="artCenter">
+			<p class="title"> REPORT TEMPLATE 2 </p>
+			<img src="reportc.png" class="artCenter">
+			<img src="reportd.png" class="artCenter">
+			<p class="title"> REPORT TEMPLATE 3 </p>
+			<img src="reporte.png" class="artCenter">
+			<img src="reportf.png" class="artCenter">
+		</div>
+		
+		
+	</body>
+</html>
