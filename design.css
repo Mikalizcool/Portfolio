@@ -338,9 +338,9 @@
 		color: #FFD250
 	}
 	h1{
-		font-family: montserrat;
-		background-color: orange;
-		border: 40px solid orange;
+		display: flex;
+		justify-content: center;
+		font-family: 'Kaushan Script', cursive;
 	}
 
 }
