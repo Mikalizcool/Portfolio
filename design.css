@@ -6,7 +6,11 @@
   animation-fill-mode: forwards;
 }
 
-
+h1{
+		display: flex;
+		justify-content: center;
+		font-family: 'Kaushan Script', cursive;
+	}
 
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
@@ -159,8 +163,8 @@
 		display: flex;
 		justify-content: center;
 		text-align: center;
-		margin-left: 30%;
-		margin-right: 30%;
+		margin-left: 10%;
+		margin-right: 10%;
 	}
 }
 
@@ -241,7 +245,7 @@
 	.nav-close{
 		visibility: hidden;
 	}
-}
+
 /*
 	@keyframes fadeInAnimation {
 		0% {
@@ -344,11 +348,7 @@
 		text-align: center;
 		color: #FFD250
 	}
-	h1{
-		display: flex;
-		justify-content: center;
-		font-family: 'Kaushan Script', cursive;
-	}
+	
 	p{
 		display: flex;
 		justify-content: center;
