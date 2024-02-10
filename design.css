@@ -166,6 +166,21 @@ h1{
 		margin-left: 10%;
 		margin-right: 10%;
 	}
+	.button1 {
+	  font-family: montserrat;
+	  font-size: 20px;
+	  display: inline-block;
+	  padding: 10px 25px;
+	  cursor: pointer;
+	  text-align: center;
+	  text-decoration: none;
+	  outline: none;
+	  color: #474747;
+	  background-color: white;
+	  border: 1px solid #474747;
+	  border-radius: 30px;
+	  margin:4px;
+	}
 }
 
 @media only screen and (min-width: 768px) {
