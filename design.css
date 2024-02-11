@@ -160,8 +160,6 @@ h1{
 	  transform: translate(0, -11px) rotate(45deg);
 	}
 	p{
-		display: flex;
-		justify-content: center;
 		text-align: center;
 		margin-left: 10%;
 		margin-right: 10%;
@@ -365,11 +363,15 @@ h1{
 	}
 	
 	p{
-		display: flex;
-		justify-content: center;
 		text-align: center;
 		margin-left: 30%;
 		margin-right: 30%;
+	}
+
+	.welcome{
+		font-size: 20px;
+		font-weight: bold;
+		color: #5BA0AD;
 	}
 
 }
