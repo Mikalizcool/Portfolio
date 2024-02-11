@@ -14,6 +14,18 @@ h1{
 	.welcome{
 		font-weight: bold;
 		color: #5BA0AD;
+		opacity: 0;
+		animation: slideIn 1s ease-in-out forwards;
+	}
+	@keyframes slideIn {
+	  0% {
+	    opacity: 0;
+	    transform: translateX(-100%);
+	  }
+	  100% {
+	    opacity: 1;
+	    transform: translateX(0);
+	  }
 	}
 
 @media only screen and (max-width: 768px) {
