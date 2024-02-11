@@ -11,6 +11,10 @@ h1{
 		justify-content: center;
 		font-family: 'Kaushan Script', cursive;
 	}
+	.welcome{
+		font-weight: bold;
+		color: #5BA0AD;
+	}
 
 @media only screen and (max-width: 768px) {
 	/* For mobile phones: */
@@ -178,6 +182,9 @@ h1{
 	  border: 1px solid #474747;
 	  border-radius: 30px;
 	  margin:4px;
+	}
+	.welcome{
+		font-size: 15px;
 	}
 }
 
@@ -370,8 +377,6 @@ h1{
 
 	.welcome{
 		font-size: 20px;
-		font-weight: bold;
-		color: #5BA0AD;
 	}
-	
+
 }
