@@ -157,22 +157,6 @@ h1{
 		display: flex;
 		justify-content: center;
 	}
-
-/*
-	@keyframes fadeInAnimation {
-		0% {
-			opacity: 0;
-		}
-		100% {
-			opacity: 1;
-		}
-	}
-*/
-	.container{
-		
-	}
-	
-
 	.button1 {
 	  font-family: montserrat;
 	  font-size: 20px;
