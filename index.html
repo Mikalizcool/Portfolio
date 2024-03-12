@@ -1,63 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<title> Michael </title>
-		
-		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-		<link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
-		<link href='./design.css' rel='stylesheet'>
-		<link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
-		<link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-		<link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-	</head>
-	<body style="background-color:rgb(252,252,252);">
-		
-		<nav class="nav">
-				<button type="button" class="nav-close" onclick="toggleNav()">
-				  
-				</button>
-				<div class="nav-box">
-					<div class="nav-links-container">
-					  <a href="./index.html" class="nav__link"> <button class="button">
-						<span class="nav__text"> HOME </span>
-						</button>
-					  </a>
-					  <a href="./art.html" class="nav__link"> <button class="button">
-						<span class="nav__text"> ART </span>
-						</button>
-					  </a>
-					  <a href="./work.html" class="nav__link"> <button class="button">
-						<span class="nav__text"> WORK </span>
-						</button>
-					  </a>
-					  <a href="./projects.html" class="nav__link"> <button class="button">
-						<span class="nav__text"> PROJECTS </span>
-						</button>
-					  </a>
-					</div>
-				</div>
-		</nav>
-		<main class="main">
-			<div class="flex-container">
-				<div class="flex-container-nav"> <button id="navButton" onclick="toggleNav()"> <div class="container" onclick="myFunction(this)">
-				  <div class="bar1"></div>
-				  <div class="bar2"></div>
-				  <div class="bar3"></div>
-				</div> </button> </div>
-			</div>
-			<h1> Mikalizcool </h1>
-			<img src="website_pic_1.gif" class="center">
-			<p class="welcome"> <font size="+3px"> Hi! </font> </p>
-			<p> My name's <span class="welcome"> Michael.</span><br><br>I'm a <span class="welcome">Frontend Web Developer, Graphic Designer, Animator, and Illustrator.</span><br><br>I've worked for respectable organizations such as the <span class="welcome"><br>Department of Homeland Security</span> and <span class="welcome"><br>Concern Worldwide.</span> </p>
-		</main>
-		<script>
-			function myFunction(x) {
-				x.classList.toggle("change");
-			}
-			function toggleNav() {
-				document.body.classList.toggle("nav-open");
-			}
-		</script>
-	</body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael</title>
+    
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href='./design.css' rel='stylesheet'>
+    <link rel="apple-touch-icon" sizes="180x180" href="./apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
+</head>
+<body style="background-color:rgb(252,252,252);">
+    
+    <nav>
+        <ul class="sidebar">
+            <li onclick = hideSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+            <li><a href="./index.html"> Home </a></li>
+            <li><a href="./art.html"> Art </a></li>
+            <li><a href="./projects.html"> Projects </a></li>
+            <li><a href="./work.html"> Work </a></li>
+        </ul>
+        <ul>
+            <li class="hideOnMobile"><a href="./index.html"> Home </a></li>
+            <li class="hideOnMobile"><a href="./art.html"> Art </a></li>
+            <li class="hideOnMobile"><a href="./projects.html"> Projects </a></li>
+            <li class="hideOnMobile"><a href="./work.html"> Work </a></li>
+            <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <main class="main">
+        <h1>Mikalizcool</h1>
+        <img src="website_pic_1.gif" class="center">
+        <p class="welcome"><font size="+3px">Hi!</font></p>
+        <p>My name's <span class="welcome">Michael.</span><br><br>I'm a <span class="welcome">Frontend Web Developer, Graphic Designer, Animator, and Illustrator.</span><br><br>I've worked for respectable organizations such as the <span class="welcome">Department of Homeland Security</span> and <span class="welcome">Concern Worldwide.</span></p>
+    </main>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
+</body>
 </html>
