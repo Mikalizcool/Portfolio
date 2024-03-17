@@ -138,6 +138,7 @@ h1{
 	.projects-container{
 		display: flex;
 		flex-direction: row;
+		justify-content: center;
 		margin: 0px 10px;
 	}
 	.games{/*
@@ -314,7 +315,6 @@ h1{
 		font-size: 15px;
 	}
 	.projects-container{
-		display: flex;
 		flex-direction: column;
 		
 	}
