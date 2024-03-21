@@ -129,7 +129,7 @@ h1{
 	.button{
 		border: none;
 		background: transparent;
-		color: lightgrey;
+		color: black;
 		font-size: 17px;
 		margin-bottom: 20px;
 		border-radius: 25px;
@@ -159,7 +159,10 @@ h1{
 	}
 
 
-	.button:hover {border: 1px solid orange;}
+	.button:hover {
+		background-color: #6DBDCC;
+		color: white;
+	}
 
 	.button:active {
 	  transform: translateY(4px);
@@ -250,12 +253,6 @@ h1{
 		justify-content: center;
 		align-items: center;
 		border-style: none;
-	}
-	.button{
-		border: none;
-		background: transparent;
-		color: lightgrey;
-		font-size: 17px;
 	}
 	
 	.desktop-logo{
