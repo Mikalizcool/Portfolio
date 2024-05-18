@@ -13,196 +13,225 @@ h1{
 		justify-content: center;
 		font-family: 'Kaushan Script', cursive;
 	}
-	.welcome{
-		font-weight: bold;
-		color: #5BA0AD;
-		opacity: 0;
-		animation: slideIn 1s ease-in-out forwards;
+.welcome{
+	font-weight: bold;
+	color: #5BA0AD;
+	opacity: 0;
+	animation: slideIn 1s ease-in-out forwards;
+}
+@keyframes slideIn {
+	0% {
+	opacity: 0;
+	transform: translateX(-100%);
 	}
-	@keyframes slideIn {
-	  0% {
-	    opacity: 0;
-	    transform: translateX(-100%);
-	  }
-	  100% {
-	    opacity: 1;
-	    transform: translateX(0);
-	  }
+	100% {
+	opacity: 1;
+	transform: translateX(0);
 	}
-	#myBtn {
-	  display: none;
-	  position: fixed;
-	  bottom: 20px;
-	  right: 5px;
-	  z-index: 99;
-	  font-size: 30px;
-	  border: none;
-	  outline: none;
-	  background-color: #FFD250 ;
-	  color: white;
-	  cursor: pointer;
-	  padding: 15px;
-	  border-radius: 4px;
-	}
-	#myBtn:hover {
-  	background-color: #555;
-	}
-	nav{
-		background-color: #6DBDCC;
-		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-	}
-	nav ul{
-		width: 100%;
-		list-style: none;
-		display: flex;
-		justify-content: flex-end;
-		align-items: center;
-		margin: 0;
-	}
-	nav li{
-		height: 50px;
-	}
-	nav a{
-		height: 100%;
-		padding: 0 30px;
-		text-decoration: none;
-		display: flex;
-		align-items: center;
-		color: black;
-	}
-	nav a:hover{
-		background-color: #f0f0f0;
-	}
-	nav li:first-child{
-		margin-right: auto;
-	}
-	.sidebar{
-		position: fixed;
-		top: 0;
-		right: 0;
-		height: 100vh;
-		width: 250px;
-		z-index: 999;
-		background-color: rgba(255, 255, 255, 0.1);
-		backdrop-filter: blur(10px);
-		box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
-		display: none;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-	}
-	.sidebar li{
-		width: 100%;
-	}
-	.sidebar a{
-		width: 100%;
-	}
-	.center{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top:5%;
-	}
-	.artCenter{
-		display: block;
-		margin-left: auto;
-		margin-right: auto;
-		margin-top:2%;
-		width:40%;
-	}
-	.icon{
-		display:flex;
-		justify-content:left;
-		
-	}
-	.links{
-		display:flex;
-		justify-content: right;
-		width:50%;
-	}
-	.button{
-		border: none;
-		background: transparent;
-		color: black;
-		font-size: 17px;
-		margin-bottom: 20px;
-		border-radius: 25px;
-		padding: 10px 20px;
-		cursor: pointer;
-	}
-	.projects-container{
-		display: flex;
-		flex-direction: row;
-		justify-content: center;
-		margin: 0px 10px;
-	}
-	.games{/*
-		position: relative;
-		left: 40%;*/
-	}
-	.art{
-		position: relative;
-		
-	}
-	img{
-		width:300px;
-		height:auto;
-	}
-	.flex-container{
-		display: flex;
-		justify-content: center;
-	}
-
-
-	.button:hover {
-		background-color: #6DBDCC;
-		color: white;
-	}
-
-	.button:active {
-	  transform: translateY(4px);
-	}
-
-	.title{
-		display:flex;
-		justify-content: center;
-		color: #474747;
-		margin-top:5%;
-		
-	}
-
-	.mini-title{
-		display:flex;
-		justify-content: center;
-		color: #474747;
-		font-size: 14px;
-	}
-
+}
+#myBtn {
+	display: none;
+	position: fixed;
+	bottom: 20px;
+	right: 5px;
+	z-index: 99;
+	font-size: 30px;
+	border: none;
+	outline: none;
+	background-color: #FFD250 ;
+	color: white;
+	cursor: pointer;
+	padding: 15px;
+	border-radius: 4px;
+}
+#myBtn:hover {
+background-color: #555;
+}
+nav{
+	background-color: #6DBDCC;
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+}
+nav ul{
+	width: 100%;
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	margin: 0;
+}
+nav li{
+	height: 50px;
+}
+nav a{
+	height: 100%;
+	padding: 0 30px;
+	text-decoration: none;
+	display: flex;
+	align-items: center;
+	color: black;
+}
+nav a:hover{
+	background-color: #f0f0f0;
+}
+nav li:first-child{
+	margin-right: auto;
+}
+.sidebar{
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100vh;
+	width: 250px;
+	z-index: 999;
+	background-color: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
+	display: none;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: flex-start;
+}
+.sidebar li{
+	width: 100%;
+}
+.sidebar a{
+	width: 100%;
+}
+.center{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:5%;
+}
+.artCenter{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top:2%;
+	width:40%;
+}
+.icon{
+	display:flex;
+	justify-content:left;
 	
-	a{
-		text-decoration: none;
-		text-decoration-line: none;
-		text-decoration-style: initial;
-		text-decoration-color: initial;
-		display: flex;
-		justify-content: center;
-		text-align: center;
-		color: white;
-		font-weight: bold;
-		
-	}
+}
+.links{
+	display:flex;
+	justify-content: right;
+	width:50%;
+}
+.button{
+	border: none;
+	background: transparent;
+	color: black;
+	font-size: 17px;
+	margin-bottom: 20px;
+	border-radius: 25px;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+.projects-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin: 0px 10px;
+}
+.games{/*
+	position: relative;
+	left: 40%;*/
+}
+.art{
+	position: relative;
 	
-	p{
-		text-align: center;
-		margin-left: 10%;
-		margin-right: 10%;
-	}
-	.welcome{
-		font-size: 20px;
-	}
-	.menu-button{
-		display: none;
-	}
+}
+img{
+	width:300px;
+	height:auto;
+}
+.flex-container{
+	display: flex;
+	justify-content: center;
+}
+
+
+.button:hover {
+	background-color: #6DBDCC;
+	color: white;
+}
+
+.button:active {
+	transform: translateY(4px);
+}
+
+.title{
+	display:flex;
+	justify-content: center;
+	color: #474747;
+	margin-top:5%;
+	
+}
+
+.mini-title{
+	display:flex;
+	justify-content: center;
+	color: #474747;
+	font-size: 14px;
+}
+
+
+a{
+	text-decoration: none;
+	text-decoration-line: none;
+	text-decoration-style: initial;
+	text-decoration-color: initial;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	
+}
+
+p{
+	text-align: center;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+.welcome{
+	font-size: 20px;
+}
+.menu-button{
+	display: none;
+}
+.project-container{
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+.gallery-item{
+	position: relative;
+}
+.gallery-item-text{
+	
+	
+}
 @media(max-width: 800px) {
 	/* For mobile phones: */
 	.hideOnMobile{
