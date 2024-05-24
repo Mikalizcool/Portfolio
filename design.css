@@ -228,6 +228,9 @@ p{
 .gallery-item{
 	position: relative;
 }
+.gallery-item img {
+	border-radius: 10px;
+}
 .gallery-item-text{
 	
 	
